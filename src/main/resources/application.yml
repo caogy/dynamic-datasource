@@ -1,0 +1,13 @@
+datasource:
+  master:
+    url: jdbc:mysql://localhost:3380/mk_master?serverTimeZone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  slave:
+    url: jdbc:mysql://localhost:3380/mk_slave?serverTimeZone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
